@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Monkey Exhibits</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    function showFact() {
+        const facts = [
+            "Monkeys can count and solve puzzles!",
+            "Capuchin monkeys use tools like rocks to crack nuts.",
+            "Some monkeys steal food from tourists—watch out!",
+            "A group of monkeys is called a troop.",
+            "Monkeys laugh when they play, just like humans!",
+            "The howler monkey is one of the loudest animals in the world!",
+            "Spider monkeys have incredibly long tails that act like extra limbs.",
+            "The Japanese macaque, or 'snow monkey,' loves to bathe in hot springs!",
+            "Squirrel monkeys weigh less than 2 pounds but can leap up to 9 feet!",
+            "Tarsiers have enormous eyes—each is bigger than their brain!",
+            "Proboscis monkeys have huge noses that help them attract mates.",
+            "Gelada baboons are the only primates that graze on grass like cows.",
+            "Some monkeys floss their teeth using twigs or hair!",
+            "The pygmy marmoset is the world's smallest monkey, weighing less than a smartphone!",
+            "Monkeys can recognize themselves in mirrors—showing self-awareness!"
+        ];
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        document.getElementById("factBox").innerText = randomFact;
+    }
+</script>
+
+</head>
+<body>
+    <header>
+        <h1>Best Monkey Exhibits</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="monkeyexhibits.html">Monkey Exhibits</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Discover the Best Monkey Exhibits</h2>
+            <p>Explore the coolest monkey exhibits around the world and have fun learning fascinating facts!</p>
+            <button onclick="showFact()">Click for a Monkey Fact!</button>
+            <p id="factBox" style="font-weight: bold;"></p>
+        </section>
+
+        <div class="exhibit-list">
+            <div class="exhibit">
+                <h3>Jane Goodall Chimpanzee Sanctuary</h3>
+                <img src="images/monke saving place.jpg" alt="Jane Goodall Chimpanzee Sanctuary">
+                <p>Location: South Africa</p>
+                <p>Experience rescued chimpanzees living in a natural habitat.</p>
+            </div>
+
+            <div class="exhibit">
+                <h3>Monkey Jungle Miami</h3>
+                <img src="images/monkeys everywhere.jpg" alt="Monkey Jungle Miami">
+                <p>Location: Florida, USA</p>
+                <p>A unique interactive experience where monkeys roam freely.</p>
+            </div>
+
+            <div class="exhibit">
+                <h3>Ubud Monkey Forest</h3>
+                <img src="images/ubud monkey.jpg" alt="Ubud Monkey Forest">
+                <p>Location: Bali, Indonesia</p>
+                <p>Walk through a stunning forest inhabited by long-tailed macaques.</p>
+            </div>
+
+            <div class="exhibit">
+                <h3>Singapore Zoo Primate Kingdom</h3>
+                <img src="images/epic zoo.jpg" alt="Singapore Zoo Primate Kingdom">
+                <p>Location: Singapore</p>
+                <p>See a wide variety of primates in thoughtfully designed habitats.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Monkey Fans United</p>
+    </footer>
+</body>
+</html>

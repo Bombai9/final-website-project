@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e6d9;
+    background-image: url("images/jungle-texture.jpg");
+    background-size: cover;
+    color: #4d3319;
+}
+
+/* Header Styling */
+header {
+    background-color: #6b4226;
+    color: #ffcc66;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffcc66;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 204, 102, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffcc66;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Fun Animation */
+@keyframes monkey-bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+h1:hover {
+    animation: monkey-bounce 0.5s infinite;
+}
+.gallery img {
+    width: 150px; /* Adjust the width to make images smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.fun-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 204, 102, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+.fact img {
+    width: 100px; /* Adjust image size */
+    height: auto;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+img {
+    width: 300px;
+    height: auto; /* Keeps the aspect ratio */
+}
+
